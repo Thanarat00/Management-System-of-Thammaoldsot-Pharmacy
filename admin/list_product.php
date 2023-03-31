@@ -137,9 +137,9 @@ $rs_supplier = mysqli_query($condb, $query_supplier);
      </td>
      <td><?php echo $row_product['p_price']; ?></td>
      <td><?php echo $row_product['p_qty']; ?></td>
-     <td>วันที่ผลิต : <?php echo $row_product['p_dateMFD']; ?> <br>
-          วันที่หมดอายุ : <?php echo $row_product['p_dateEXD']; ?> <br>
-
+     <td>วันที่ผลิต : <?php echo substr($row_product['p_dateMFD'],8,2)." ". $thaimonth[substr($row_product['p_dateMFD'],5,2)-1]." ".substr(substr($row_product['p_dateMFD'],0,4)+543,0,4)?> <br>
+          วันที่หมดอายุ : <?php echo substr($row_product['p_dateEXD'],8,2)." ". $thaimonth[substr($row_product['p_dateEXD'],5,2)-1]." ".substr(substr($row_product['p_dateEXD'],0,4)+543,0,4)?> <br>
+         
           <?php $p_dateEXD = $row_product['p_dateEXD'];
                 $p_dateMFD = $row_product['p_dateMFD']; 
                 $dd = round(abs(strtotime($p_dateEXD) - strtotime($p_dateMFD))/60/60/24);
