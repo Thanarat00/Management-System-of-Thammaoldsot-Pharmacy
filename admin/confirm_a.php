@@ -89,7 +89,7 @@ if(!empty($_SESSION['cart']))
 		." รายการ"
 
 		. "</td>";
-		echo "<td align='right'>" .number_format($row["p_price"],2) . "</td>";
+		echo "<td align='right'>" .number_format($row["p_price"]) . "</td>";
 		echo "<td align='right'>"; 
 
 

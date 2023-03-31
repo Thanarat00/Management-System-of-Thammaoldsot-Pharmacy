@@ -113,12 +113,12 @@ $order_id = mysqli_real_escape_string($condb,$_GET['order_id']);
   	<td align='right'colspan='2'>
 
 
-  		<b><?php echo number_format($total,2);?> Baht</b>
+  		<b><?php echo number_format($total,2);?> บาท</b>
 
   		<br>
-  			<b><?php echo number_format($rowmember['pay_amount2'],2);?> Baht</b>
+  			<b><?php echo number_format($rowmember['pay_amount2'],2);?> บาท</b>
   		<br>
-  			<b><?php echo number_format($pay_amount3,2);?> Baht</b>
+  			<b><?php echo number_format($pay_amount3,2);?> บาท</b>
 
 
 

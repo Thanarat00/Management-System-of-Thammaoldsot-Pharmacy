@@ -152,7 +152,7 @@ function barcode($code){
                               <img width="100%" src="../p_img/<?php echo $rs_prd['p_img'] ;?>" class="card-img-top" alt="<?php echo $rs_prd['p_name'] ;?>" title="<?php echo $rs_prd['p_name'] ;?>">
                               <div class="card-body">
                                  <h5 class="card-title"><?php echo $rs_prd['p_name']; ?></h5>
-                                <p class="card-text"><?php echo number_format($rs_prd['p_price'],2); ?> บาท</p>
+                                <p class="card-text"><?php echo number_format($rs_prd['p_price']); ?> บาท</p>
 
 
                                 <?php if($rs_prd['p_qty'] > 0){ ?>
@@ -234,14 +234,7 @@ function barcode($code){
 <script>
   $(function () {
     $(".datatable").DataTable();
-    // $('#example2').DataTable({
-    //   "paging": true,
-    //   "lengthChange": false,
-    //   "searching": false,
-    //   "ordering": true,
-    //   "info": true,
-    //   "autoWidth": false,
-    // });
+
   });
 </script>
   
