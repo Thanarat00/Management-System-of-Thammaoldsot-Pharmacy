@@ -183,6 +183,7 @@ $rs_t= mysqli_query($condb, $query_t);
                   </div>
               </form>
               <?php } else {?>
+               
                 <form action="index_sl.php"  method="POST" class="mx-2 my-auto d-inline w-100">
                  <div class="input-group">
                     <input type="text" name="p_name" class="form-control" placeholder="ค้นหา">
@@ -207,10 +208,20 @@ $rs_t= mysqli_query($condb, $query_t);
 
               <?php } else {?>
                 <li class="nav-item">
-                  
-                    <a class="nav-link text-light" href="admin/user.php">ยินดีต้อนรับ : <?php echo $c_img.$c_name.$c_surname; ?></a>
-                    <li class="nav-item">
-                    <a class="nav-link text-light" href="logout.php">ออกจากระบบ</a>
+              <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item dropdown">
+                    <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    || <?php echo $c_img.$c_name.$c_surname; ?> ||
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                      <li><a class="dropdown-item" href="admin/user.php">ประวัติ</a></li>
+                      <li><a class="dropdown-item" href="logout.php">ออกจากระบบ</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+                </li>  
               <?php }?>
             </ul>
                 </nav>
