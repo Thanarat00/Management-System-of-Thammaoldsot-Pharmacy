@@ -39,7 +39,7 @@ $rs_my_order = mysqli_query($condb, $query_my_order);
 
      <td><?php echo $rs_order['order_id']; ?></td>
      <td>
-      ชื่อ ผู้ทำรายการขาน : <?php echo $rs_order['mem_name']; ?> <br>
+      ชื่อ ผู้ทำรายการขาย : <?php echo $rs_order['mem_name']; ?> <br>
       ชื่อผู้ซื้อสินค้า : <?php echo $rs_order['c_name']; ?> <hr>
       <?php
         $order_id = $rs_order['order_id'];
