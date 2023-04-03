@@ -120,7 +120,7 @@ if(!empty($_SESSION['cart']))
 
 <?php if ($mem_id != ''){?>
 <?php 
-$query_member = "SELECT * FROM tbl_customer WHERE c_status = 1" or die
+$query_member = "SELECT * FROM tbl_customer WHERE c_status = 1 AND c_id >=2" or die
 ("Error : ".mysqlierror($query_member));
 $rs_cus = mysqli_query($condb, $query_member);
 //echo ($query_level);//test query

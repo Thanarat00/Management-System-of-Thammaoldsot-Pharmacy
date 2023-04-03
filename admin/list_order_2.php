@@ -21,12 +21,12 @@ $rs_my_order = mysqli_query($condb, $query_my_order);
 
 <table id="example1" class="table table-bordered  table-hover table-striped">
   <thead>
-    <tr class="danger">
-      <th width="7%"><center>No.</center></th>
+  <tr class="danger">
+      <th width="7%"><center>ลำดับ</center></th>
       <th width="30%">รายละเอียด</th>
-      <th width="10%">Status</th>
+      <th width="10%">สถานะ</th>
       
-      <th width="10%">date</th>
+      <th width="10%">วันที่</th>
       <th width="10%">จัดการ</th>
       
     </tr>

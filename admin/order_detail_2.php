@@ -41,12 +41,12 @@ $order_id = mysqli_real_escape_string($condb,$_GET['order_id']);
 
   <table border="0" align="center" class="table table-hover table-bordered table-striped">
     
-    <tr>
+    <tr></tr>
   <td width="5%" align="center">ลำดับสินค้า</td>
-      <td width="10%" align="center">img</td>
+      <td width="10%" align="center">รูปภาพ</td>
       <td width="35%" align="center">สินค้า</td>
-      <td width="10%" align="center">ราคา/หน่วย</td>
-      <td width="10%" align="center">จำนวน</td>
+      <td width="10%" align="center">ราคา/บาท</td>
+      <td width="10%" align="center">จำนวน/หน่วย</td>
       <td width="15%" align="center">รวม(บาท)</td>
      
     </tr>
