@@ -18,9 +18,12 @@ if ($product == "add") {
 	$p_name = mysqli_real_escape_string($condb,$_POST["p_name"]);
 	$p_barcode = mysqli_real_escape_string($condb,$_POST["p_barcode"]);
 	$p_detail = mysqli_real_escape_string($condb,$_POST["p_detail"]);
+	$p_detailmore = mysqli_real_escape_string($condb,$_POST["p_detailmore"]);
 	$p_license = mysqli_real_escape_string($condb,$_POST["p_license"]);
 	$p_dateMFD = mysqli_real_escape_string($condb,$_POST["p_dateMFD"]);
 	$p_dateEXD = mysqli_real_escape_string($condb,$_POST["p_dateEXD"]);
+	$p_lot = mysqli_real_escape_string($condb,$_POST["p_lot"]);
+
 	$s_id = mysqli_real_escape_string($condb,$_POST["s_id"]);
 
 
@@ -53,10 +56,12 @@ if ($product == "add") {
 	b_id, 
 	p_barcode, 
 	p_name, 
-	p_detail, 
+	p_detail,
+	p_detailmore, 
 	p_license, 
 	p_dateMFD, 
-	p_dateEXD, 
+	p_dateEXD,
+	p_lot, 
 	s_id, 
 	p_price, 
 	p_qty, 
@@ -69,9 +74,11 @@ if ($product == "add") {
 	'$p_barcode',
 	'$p_name',
 	'$p_detail',
+	'$p_detailmore',
 	'$p_license',
 	'$p_dateMFD',
 	'$p_dateEXD',
+	'$p_lot',
 	'$s_id',
 	'$p_price',
 	'$p_qty',
@@ -114,9 +121,11 @@ if ($product == "add") {
 	$p_barcode = mysqli_real_escape_string($condb,$_POST["p_barcode"]);
 	$p_name = mysqli_real_escape_string($condb,$_POST["p_name"]);
 	$p_detail = mysqli_real_escape_string($condb,$_POST["p_detail"]);
+	$p_detailmore = mysqli_real_escape_string($condb,$_POST["p_detailmore"]);
 	$p_license = mysqli_real_escape_string($condb,$_POST["p_license"]);
 	$p_dateMFD = mysqli_real_escape_string($condb,$_POST["p_dateMFD"]);
 	$p_dateEXD = mysqli_real_escape_string($condb,$_POST["p_dateEXD"]);
+	$p_lot = mysqli_real_escape_string($condb,$_POST["p_lot"]);
 	$s_id = mysqli_real_escape_string($condb,$_POST["s_id"]);
 
 	$p_price = mysqli_real_escape_string($condb,$_POST["p_price"]);
@@ -147,10 +156,12 @@ if ($product == "add") {
 	$sql = "UPDATE tbl_product SET 
 			  p_barcode = '$p_barcode',
 			  p_name = '$p_name', 
-              p_detail = '$p_detail', 
+              p_detail = '$p_detail',
+			  p_detailmore = '$p_detailmore', 
               p_license = '$p_license',
               p_dateMFD = '$p_dateMFD', 
               p_dateEXD = '$p_dateEXD', 
+			  p_lot = '$p_lot',
               s_id = '$s_id',
               p_price = '$p_price', 
               p_qty = '$p_qty', 

@@ -88,7 +88,8 @@ $rs_gall = mysqli_query($condb, $query_gall);
           <p>
             <b>รายละเอียดสินค้า</b><br/>
             <?php echo $row_prd['p_detail'] ;?><br/>
-           
+            <b>วิธีการใช้</b><br/>
+            <?php echo $row_prd['p_detailmore'] ;?><br/>
 
         </div>
 

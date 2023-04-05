@@ -45,7 +45,7 @@ $rs_brand = mysqli_query($condb, $query_brand);
 
 $query_supplier = "
 SELECT *
-FROM tbl_supplier  WHERE " or die
+FROM tbl_supplier  WHERE s_id " or die
 ("Error : ".mysqlierror($query_supplier));
 $rs_supplier = mysqli_query($condb, $query_supplier);
 
@@ -342,6 +342,13 @@ $rs_supplier = mysqli_query($condb, $query_supplier);
                       <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"  name="p_detail"></textarea>
                     </div>
                   </div>
+                  <div class="form-group row">
+                    <label for="" class="col-sm-2 col-form-label">รายละเอียดเพิ่มเติม </label>
+                    <div class="col-sm-10">
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"  name="p_detailmore"></textarea>
+                    </div>
+                  </div>
+
 
                   <div class="form-group row">
                     <label for="" class="col-sm-2 col-form-label">ใบอนุญาต </label>
@@ -371,8 +378,12 @@ $rs_supplier = mysqli_query($condb, $query_supplier);
                       <input  name="p_dateEXD" type="date" required class="form-control"  placeholder=""/>
                     </div>
                   </div>
-
-
+                  <div class="form-group row">
+                    <label for="" class="col-sm-2 col-form-label"> สินค้านำเข้า</label>
+                    <div class="col-sm-10">
+                      <input  name="p_lot" type="text" required class="form-control"  placeholder=""/>
+                    </div>
+                  </div>
 
                   <div class="form-group row">
                     <label for="" class="col-sm-2 col-form-label">ผู้ผลิต </label>
@@ -391,7 +402,6 @@ $rs_supplier = mysqli_query($condb, $query_supplier);
                       
                     </div>
                   </div>
-
 
 
 
