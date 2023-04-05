@@ -42,7 +42,7 @@ reader.readAsDataURL(input.files[0]);
       <div class="card-body">
         <div class="row">
           
-          <div class="col-md-6">
+          <div class="col-md-12">
             <table id="example1" class="table table-bordered  table-hover table-striped">
               <thead>
                 <tr class="danger">

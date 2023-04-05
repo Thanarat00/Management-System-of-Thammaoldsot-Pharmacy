@@ -57,14 +57,14 @@ $rs_member = mysqli_query($condb, $query_member);
 
               <div class="row">
                  
-                 <div class="col-md-8">
+                 <div class="col-md-12">
 
                     <table id="example1" class="table table-bordered  table-hover table-striped">
   <thead>
     <tr class="danger">
       <th width="5%"><center>ลำดับ</center></th>
       <th width="10%">รูปภาพ</th>
-      <th width="20%">ชื่อ</th>
+      <th width="40%">ชื่อ</th>
       <th width="20%">ระดับผู้ใช้งาน</th>
       <th width="20%">สถานะการใช้งาน</th>
       <th width="20%">แก้ไข</th>

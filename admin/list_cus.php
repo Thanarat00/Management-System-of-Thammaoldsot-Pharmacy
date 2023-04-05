@@ -56,7 +56,7 @@ $rs_cus = mysqli_query($condb, $query_member);
 
               <div class="row">
                  
-                 <div class="col-md-8">
+                 <div class="col-md-12">
 
                     <table id="example1" class="table table-bordered  table-hover table-striped">
   <thead>
