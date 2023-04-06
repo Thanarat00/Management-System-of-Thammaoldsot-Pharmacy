@@ -14,7 +14,7 @@ if ($member == "add") {
 
 
 
-	$ref_l_id = mysqli_real_escape_string($condb,$_POST["ref_l_id"]);
+	$ref_l_id = 2;
 	
 	$mem_name = mysqli_real_escape_string($condb,$_POST["mem_name"]);
 	$mem_username = mysqli_real_escape_string($condb,$_POST["mem_username"]);
