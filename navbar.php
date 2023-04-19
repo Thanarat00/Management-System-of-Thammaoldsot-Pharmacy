@@ -40,7 +40,7 @@ $rs_t= mysqli_query($condb, $query_t);
             </a>
       <ul class="navbar-nav">
               <li class="nav-item active">
-                  <a class="nav-link text-light" href="index.php"><b>หน้าแรก</b></a>
+                 
                 </li>
             </ul>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -195,17 +195,18 @@ $rs_t= mysqli_query($condb, $query_t);
               <?php }?>
                 
             
-            </div>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
+    
             <?php if ($c_id == ''){ ?>
               &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
               &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
               &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
               &nbsp;  &nbsp;  
                 <li class="nav-item">
-                  <a class="nav-link text-light" href="login.php"><b>เข้าสู่ระบบ</b></a>
+                  <a class="nav-link text-light nav-item active" href="login.php">เข้าสู่ระบบ</a>
                 </li>
-
+                </div>
               <?php } else {?>
                 <li class="nav-item">
               <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
@@ -224,6 +225,7 @@ $rs_t= mysqli_query($condb, $query_t);
                 </li>  
               <?php }?>
             </ul>
+        </div>
                 </nav>
 
                 
